@@ -1,0 +1,41 @@
+@import '../../../styles/_globals.scss';
+
+.tab-root-wrapper {
+
+    margin-right: 25px;
+    padding-right: 15px;
+    background-color: #222222;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-family: $main-font;
+    padding-top: 10px;
+    height: 45px;
+    box-sizing: border-box;
+    line-height: 25px;
+
+    a, span {
+
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    &.disabled {
+
+        cursor: default;
+        pointer-events: none;
+        
+        a, span {
+
+            color: $darkest-gray;
+        }
+    }
+
+    &.selected, &:hover {
+
+        border-bottom: 3px solid $tab-seleced;
+        background-color: #222222;
+        transition: border-bottom .2s ease;
+    }
+}

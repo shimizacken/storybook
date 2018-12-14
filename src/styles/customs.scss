@@ -1,0 +1,19 @@
+:global div.my-tab {
+
+    > a, > span {
+
+        color: green;
+        background-color: orange;
+        font-size: 26px;
+        font-style: italic;
+    }
+
+    &:hover {
+        border-bottom: 5px dashed yellow;
+    }
+}
+
+:global div.my-tabs {
+
+    background-color: greenyellow;
+}

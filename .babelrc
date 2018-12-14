@@ -1,0 +1,4 @@
+{
+    "presets": [["es2015", { "modules": false }], "env", "react", "stage-1"],
+    "plugins": ["transform-es2015-modules-commonjs"]
+}

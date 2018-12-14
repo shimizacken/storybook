@@ -1,0 +1,10 @@
+@import '../../../styles/_globals.scss';
+
+.form-row {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,33 @@
+@import '../../../styles/_globals.scss';
+
+textarea, button, button:active, input, input:focus {
+    
+    outline: none;
+}
+
+.simple-button {
+
+    font-family: $main-font;
+    font-size: $font-size-average;
+
+    border-radius: 15px;
+    background-color: $light-gray;
+    min-width: 150px;
+    height: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 10px;
+
+    &:hover {
+
+        background-color: $darker-gray;
+        cursor: pointer;
+        @include site-animation();
+    }
+
+    &.disabled {
+
+        cursor: default;
+        background-color: $darker-gray;
+    }
+}

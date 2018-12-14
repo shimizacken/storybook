@@ -1,0 +1,100 @@
+@import '../../styles/_globals.scss';
+
+.root {
+
+    display: inline-block;
+    font-family: $main-font;
+
+    .text-field {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 40px;
+
+        border-radius: 15px;
+        background-color: #fff;
+    
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @include site-animation();
+        
+        @include general-border($light-gray);
+    
+        &.focus {
+    
+            @include general-border($darker-gray);
+        }
+    
+        &.disabled {
+    
+            background-color: $darker-gray;
+
+            .input {
+
+                background-color: inherit;
+            }
+        }
+    
+        &.error {
+    
+            border: 1px solid $tab-seleced;
+        }
+    
+        .input {
+    
+            color: $main-font-color;
+            height: 35px;
+            font-size: $font-size-average;
+            border: none;
+            width: 100%;
+        }
+
+        .helptooltip {
+
+            width: 17px;
+            height: 17px;
+            text-align: center;
+            margin-right: -5px;
+            margin-left: 5px;
+            font-size: $small-font;
+            background-color: $darker-gray;
+            color: #fff;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            &:hover {
+
+                cursor: pointer;
+                background-color: $darkest-gray;
+                @include site-animation();
+            }
+        }
+    }
+}
+
+.error-message {
+
+    color: $tab-seleced;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $input-placeholder-gray;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $input-placeholder-gray;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: $input-placeholder-gray;
+}

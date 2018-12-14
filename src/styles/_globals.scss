@@ -1,0 +1,35 @@
+
+$main-font-color: #000000;
+
+$main-font: 'Ubuntu', sans-serif;
+
+$small-font: 13px;
+$font-size-average: 16px;
+
+$tab-seleced: #cc4125;
+
+
+// colors
+$lighter-gray: #fefefe;
+$light-gray: #f3f3f3;
+$mid-gray: #f5f5f5;
+$input-placeholder-gray: #afafaf;
+$darker-gray: #e0e0e0;
+$darkest-gray: #cccccc;
+
+// chart
+$chart-connector-borders: #e0e0e0;
+$border-width: 1px;
+
+@mixin general-border($color) {
+    
+    border: 1px solid $color;
+}
+
+@mixin site-animation() {
+
+    -webkit-transition: background-color .2s ease-in;
+    -moz-transition: background-color .2s ease-in;
+    -o-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+}

@@ -1,0 +1,52 @@
+{
+  "name": "storybook-hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run storybook",
+    "storybook": "start-storybook -p 9009 -c .storybook",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/shimizacken/storybook-hello.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/shimizacken/storybook-hello/issues"
+  },
+  "homepage": "https://gitlab.com/shimizacken/storybook-hello#README",
+  "devDependencies": {
+    "@sambego/storybook-styles": "^1.0.0",
+    "@storybook/addon-info": "^3.4.2",
+    "@storybook/addon-knobs": "^3.4.2",
+    "@storybook/addon-notes": "^3.4.2",
+    "@storybook/addon-viewport": "^3.4.2",
+    "@storybook/react": "^3.4.2",
+    "babel-core": "^6.26.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^22.4.3",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "@storybook/addon-actions": "^3.4.2",
+    "classnames": "^2.2.5",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-svg-loader": "^2.1.0"
+  }
+}

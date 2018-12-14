@@ -1,0 +1,14 @@
+@import '../../styles/_globals.scss';
+
+.tabs-root-wrapper {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #000000;
+}
+
+.tabs-content {
+
+    display: block;
+}
